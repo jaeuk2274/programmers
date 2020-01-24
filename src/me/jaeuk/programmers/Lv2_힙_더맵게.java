@@ -1,16 +1,16 @@
-package me.jaeuk;
+package me.jaeuk.programmers;
 import java.util.PriorityQueue;
 
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/42626?language=java
  * 프로그래머스-힙-더맵게
  */
-public class 더맵게 {
+public class Lv2_힙_더맵게 {
     public static void main(String[] args) {
         int[] scoville = {1,2,3,9,10,12};
         int k = 7;
 
-        더맵게 더맵게 = new 더맵게();
+        Lv2_힙_더맵게 더맵게 = new Lv2_힙_더맵게();
         int answer = 더맵게.solution(scoville, k);
 
         System.out.println("answer : " + answer);

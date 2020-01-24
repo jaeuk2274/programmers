@@ -1,16 +1,16 @@
-package me.jaeuk;
+package me.jaeuk.programmers;
 
 import java.util.HashMap;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/42576
- * 프로그래머스 - 해시 - 완주하지 못한 선수
+ * 프로그래머스-해시-완주하지 못한 선수
  */
-public class 완주하지못한선수 {
+public class Lv1_해시_완주하지못한선수 {
     public static void main(String[] args) {
         String[] participant = {"leo", "kiki", "eden"};
         String[] completion = {"eden", "kiki"};
 
-        완주하지못한선수 완주하지못한선수 = new 완주하지못한선수();
+        Lv1_해시_완주하지못한선수 완주하지못한선수 = new Lv1_해시_완주하지못한선수();
         String remainName = 완주하지못한선수.solution(participant, completion);
 
         System.out.println(remainName);

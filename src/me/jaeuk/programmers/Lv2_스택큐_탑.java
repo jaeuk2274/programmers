@@ -1,4 +1,4 @@
-package me.jaeuk;
+package me.jaeuk.programmers;
 
 import java.util.Stack;
 
@@ -7,11 +7,11 @@ import java.util.Stack;
  * 프로그래머스 - 스택/큐 - 탑
  */
 
-public class 탑 {
+public class Lv2_스택큐_탑 {
     public static void main(String[] args) {
         int[] heights = {3, 9, 9, 3, 5, 7, 2};
 
-        탑 탑 = new 탑();
+        Lv2_스택큐_탑 탑 = new Lv2_스택큐_탑();
         int answer[] = 탑.solution(heights);
 
         for (int i : answer) {

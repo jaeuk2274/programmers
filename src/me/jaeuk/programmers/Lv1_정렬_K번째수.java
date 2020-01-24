@@ -1,4 +1,4 @@
-package me.jaeuk;
+package me.jaeuk.programmers;
 
 import java.util.Arrays;
 
@@ -6,12 +6,12 @@ import java.util.Arrays;
  * https://programmers.co.kr/learn/courses/30/lessons/42748
  * 프로그래머스-정렬-K번째
  */
-public class K번째수 {
+public class Lv1_정렬_K번째수 {
     public static void main(String[] args) {
         int[] array = {1, 5, 2, 6, 3, 7, 4};
         int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 
-        K번째수 K번째수 = new K번째수();
+        Lv1_정렬_K번째수 K번째수 = new Lv1_정렬_K번째수();
         int answer[] = K번째수.solution(array, commands);
 
         for (int i : answer) {

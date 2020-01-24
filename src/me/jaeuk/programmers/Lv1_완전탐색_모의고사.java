@@ -1,4 +1,4 @@
-package me.jaeuk;
+package me.jaeuk.programmers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +7,11 @@ import java.util.List;
  * https://programmers.co.kr/learn/courses/30/lessons/42840
  * 프로그래머스 - 완전탐색 - 모의고사
  */
-public class 모의고사 {
+public class Lv1_완전탐색_모의고사 {
     public static void main(String[] args) {
         int[] answers = {1,3,2,4,2};
 
-        모의고사 모의고사 = new 모의고사();
+        Lv1_완전탐색_모의고사 모의고사 = new Lv1_완전탐색_모의고사();
         int answer[] = 모의고사.solution(answers);
 
         for (int i : answer) {
