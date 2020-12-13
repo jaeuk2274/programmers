@@ -49,7 +49,7 @@ public class Lv3_해시_베스트앨범_20201213 {
         System.out.println("maxPlayGenre : " + maxPlayGenre);
 
         List<Music> musicList = getMusicList(genres, plays);
-        sortMusicListByGenreAndPlays(musicList);
+        sortMusicListByGenreAndPlays(musicList, genreCountMap);
         System.out.println("sort musicList");
         for(int i=0; i<musicList.size(); i++){
             System.out.println(musicList.get(i));
@@ -98,15 +98,21 @@ public class Lv3_해시_베스트앨범_20201213 {
         return musicList;
     }
 
-    private void sortMusicListByGenreAndPlays(List<Music> musicList) {
+    private void sortMusicListByGenreAndPlays(List<Music> musicList, HashMap<String, Integer> map) {
         Comparator<Music> playComparator = new Comparator<Music>() {
             @Override
             public int compare(Music o1, Music o2) {
-                int value = o2.getGenre().compareTo(o1.getGenre());
-                if(value == 0){
-                    return o2.getPlay() - o1.getPlay();
+                if(map.get(o2.getGenre()) > map.get(o1.getGenre())){
+                    return 1;
+                } else if(map.get(o2.getGenre()) < map.get(o1.getGenre())){
+                    return -1;
                 }
-                return value;
+                if(o2.getPlay() > o1.getPlay()){
+                    return 1;
+                } else if(o2.getPlay() < o1.getPlay()) {
+                    return -1;
+                }
+                return 1;
             }
         };
         Collections.sort(musicList,playComparator);
